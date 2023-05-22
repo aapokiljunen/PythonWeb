@@ -1,0 +1,43 @@
+<doctype! html>
+<html lang=en>
+	<head>
+		<title>Harjoitus 1 - raportti</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<div><h1>Raportti H1</h1></div>
+		<div><h2>Tiivistelmä</h2>
+			<p>Tässä harjoituksessa tarkoituksenani oli asentaa Django-kehitysympäristö
+				Tero Karvisen  <a href ="https://terokarvinen.com/2022/django-instant-crm-tutorial/">ohjeiden</a>
+				mukaan. Asennus onnistuikin ja jatkoin tehtävää myös luomalla yhden 
+				taulun tietokantaan ja kokeilin sen muokkaamista
+			</p>
+		</div>
+		<div><h2>A) Asenna Django-kehitysympäristö</h2>
+
+			<p>Asennus alkoi asentamalla virtualinen kehitysympäristö sekä Python. Virtualenviin 
+				puolestaan pip-komennolla asnesin djangon, kunhan tekstitiedostoon oli määritelty 
+				että se on toivottava asennnettava. Suoraan sanottuna en näistä Linuxeista paljoa 
+				ymmärrä. Djangosta asentui versio 4.2.1.
+
+				Uuden django-projektin sai luotua "django-admin startproject aapo" -komennolla ja
+				sen jälkeen ohjelma olikin olemassa. Ensimmäistä kertaa runserverin ajaessa ohjelma 
+				valitti puuttuvista migraatioista, jotka korjaantuivat päivittämällä tietokanta  makemigrations ja migrate 
+			</p>
+		</div>
+		<div><h2>B) Luo yksinkertainen taulu tietokantaan</h2>
+		
+			<p>Asennuksen jälkeen loin sivulle admin-käyttäjän ja testasin että se toimii.
+				Ohjeita seuraamalla seuraavaksi loin crm-appin, lisäsin sen ohjelman asetuksiin, loin Customer-olion
+				ja päivitin tietokannan makemigrations- ja migrate -komennoilla. Tietokannan rekisteröinnin 
+				jälkeen sen pystyi myös näkemään admin-sivulta.
+			</p>
+		</div>
+		<div><h2>Lähteet</h2>
+		
+			<p>Pohjana Tero Karvinen 2022: <a href ="https://terokarvinen.com/2022/django-instant-crm-tutorial/">Django 4 Instant Customer Database Tutorial</a>
+			</p>
+			
+		</div>
+	
+</html>
