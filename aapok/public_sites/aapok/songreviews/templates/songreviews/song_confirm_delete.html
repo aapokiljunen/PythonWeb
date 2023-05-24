@@ -1,0 +1,12 @@
+{% extends "songreviews/base.html" %}
+
+{% block "content" %}
+	Are you sure you want to delete <b>{{ object }}</b>.
+	
+	<form method=post>
+		{% csrf_token %}
+		<input type=submit value="Delete">
+	</form>
+
+	<p><a href="/">Cancel</a></p>
+{% endblock "content" %}

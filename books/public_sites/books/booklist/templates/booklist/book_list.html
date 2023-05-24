@@ -2,7 +2,12 @@
 
 {% block "content" %}
 	{% for object in object_list  %}
-		<p>{{ object }}</p>
+		<p>
+			<a href="/book/{{ object.id }}">{{ object.name }}</a>
+			{{ object.review }}
+		</p>
 	{% endfor %}
+
+	<p><a href="book/new">Add Book</a></p>
 {% endblock "content" %}
  

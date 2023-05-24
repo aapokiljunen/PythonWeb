@@ -1,0 +1,10 @@
+{% extends "songreviews/base.html" %}
+
+{% block "content" %}
+	{% for object in object_list %}
+		<p><a href="/song/{{ object.pk }}">{{ object.name }}</a></p>
+	{% endfor %}
+	<br>
+	<p><a href="/song/new">Add new song</a></p>
+	
+{% endblock "content" %}

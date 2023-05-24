@@ -1,0 +1,12 @@
+{% extends "booklist/base.html" %}
+{% block "content" %}
+	<p>Delete book {{ object.name }} ?
+
+	<form method=post>
+		{% csrf_token %}
+		<input type=submit value="Delete">
+	</form>
+	
+	<p><a href="/">Cancel</a></p>
+	
+{% endblock "content" %}
