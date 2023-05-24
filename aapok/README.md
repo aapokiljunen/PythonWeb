@@ -1,4 +1,4 @@
-Biisien arvosteluun tarkoitettu sovellus. Perus CRUD-ominaisuudet toimivat.
+Biisien arvosteluun tarkoitettu sovellus. No okei mitään arvosteluun liittyvää ei vielä löydy. Perus CRUD-ominaisuudet toimivat.
 
 
 ![alt_text](kappaleita.png)
