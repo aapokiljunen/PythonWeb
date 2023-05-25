@@ -10,7 +10,7 @@ class Author(models.Model):
 class Book(models.Model):
 	name = models.CharField(max_length=100)
 	review = models.TextField(blank=True)
-#	author = models.ForeignKey(Author, on_delete=models.CASCADE)
+	author = models.ForeignKey(Author, on_delete=models.CASCADE, null=True, blank=True)
 	
 	def __str__(self):
 		return self.name

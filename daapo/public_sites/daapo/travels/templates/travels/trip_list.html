@@ -1,0 +1,21 @@
+{% extends "travels/base.html" %}
+
+{% block "content" %}
+	{% for object in object_list  %}
+		<p>
+			{% if object.traveller %}
+				 <a href="/traveller/{{ object.traveller.pk }}">{{ object.traveller }}</a>
+			{% endif %} to 
+			{% if object.destination %}
+				 <a href="/destination/{{ object.destination.pk }}">{{ object.destination }}</a>.
+			{% endif %}
+			{% if object.name %}
+				"{{ object.name }}"
+			{% endif %}
+			<b><a href="trip/{{ object.pk }}">UPDATE</a></b>
+		</p>
+	{% endfor %}
+	<br>
+	<p><a href="trip/new">Add a trip</a></p>
+{% endblock "content" %}
+ 

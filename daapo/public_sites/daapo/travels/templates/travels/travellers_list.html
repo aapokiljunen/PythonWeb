@@ -1,0 +1,12 @@
+{% extends "travels/base.html" %}
+
+{% block "content" %}
+	{% for object in object_list  %}
+		<p>
+			<b><a href="traveller/{{ object.pk }}">{{ object }}</a></b>
+		</p>
+	{% endfor %}
+	<br>
+	<p><a href="traveller/new">Add a traveller</a></p>
+{% endblock "content" %}
+ 

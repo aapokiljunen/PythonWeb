@@ -3,11 +3,15 @@
 {% block "content" %}
 	{% for object in object_list  %}
 		<p>
-			<a href="/book/{{ object.id }}">{{ object.name }}</a>
+			<b><a href="/book/{{ object.id }}">{{ object.name }}</a></b>
+			{% if object.author %}
+				by <a href="/author/{{ object.author.id }}">{{ object.author }}</a>.
+			{% endif %}
 			{{ object.review }}
 		</p>
 	{% endfor %}
-
+	<br>
 	<p><a href="book/new">Add Book</a></p>
+	<p><a href="authorlist">Authors</a></p>
 {% endblock "content" %}
  

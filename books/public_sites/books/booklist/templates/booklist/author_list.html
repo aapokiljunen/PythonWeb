@@ -1,0 +1,16 @@
+{% extends "booklist/base.html" %}
+
+{% block "content" %}
+	<h2> Authors </h2>
+	{% for object in object_list  %}
+		<p>
+			<a href="/author/{{ object.id }}">{{ object }}</a>
+			{{ object.review }}
+		</p>
+	{% endfor %}
+	<br>
+	<p><a href="author/new">Add author</a></p>
+	<p><a href="/">Return book list</a></p>
+		
+{% endblock "content" %}
+ 

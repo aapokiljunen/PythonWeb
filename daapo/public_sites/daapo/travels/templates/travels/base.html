@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang=en>
+	<head>
+		<title>Travels</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width; initial-scale=1">
+	</head>
+	<body>
+		<header>
+			<a href="/">Travels</a>
+			<a href="/travellerlist">Travellers</a> 
+			<a href="/destinationlist">Destinations</a> 
+			{% if user.user_name %}
+				-- Logged in as {{ user }}
+			{% endif %}
+		</header>
+	<h1>Travels</h1>
+
+	{% block "content" %}	
+		empty page
+	{% endblock "content" %}	
+		
+	</body>
+	
+
+</html>

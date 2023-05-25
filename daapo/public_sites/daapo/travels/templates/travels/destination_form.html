@@ -1,0 +1,15 @@
+{% extends "travels/base.html" %}
+{% block "content" %}
+	<form method=post>
+		{% csrf_token %}
+		{{ form.as_p }}
+		<input type=submit value="Submit">
+	</form>
+
+	<p><a href="/">Cancel</a></p>
+
+	{% if object %}
+		<p><a href="/destination/{{ object.pk }}/delete">Delete this destination</a></p>
+	{% endif %}
+	
+{% endblock "content" %}
